@@ -16,11 +16,21 @@ public class ExampleUnhappyTests {
     }
 
     @Test
-    @DisplayName("Error code validation.")
-    public void InvalidMethod() {
+    @DisplayName("404 error code validation.")
+    public void NotFound() {
+        when().
+                get("/films/99").
+                then().
+                statusCode(404);
+    }
+
+    @Test
+    @DisplayName("405 error code validation.")
+    public void InvalidMethodPOST() {
         when().
                 post("/people/1").
                 then().
                 statusCode(405);
     }
+
 }

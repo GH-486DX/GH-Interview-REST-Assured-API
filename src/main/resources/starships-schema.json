@@ -1,0 +1,147 @@
+{
+  "type": "object",
+  "default": {},
+  "title": "Starships Schema",
+  "required": [
+    "name",
+    "model",
+    "manufacturer",
+    "cost_in_credits",
+    "length",
+    "max_atmosphering_speed",
+    "crew",
+    "passengers",
+    "cargo_capacity",
+    "consumables",
+    "hyperdrive_rating",
+    "MGLT",
+    "starship_class",
+    "pilots",
+    "films",
+    "created",
+    "edited",
+    "url"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "default": "",
+      "title": "The name Schema"
+    },
+    "model": {
+      "type": "string",
+      "default": "",
+      "title": "The model Schema"
+    },
+    "manufacturer": {
+      "type": "string",
+      "default": "",
+      "title": "The manufacturer Schema"
+    },
+    "cost_in_credits": {
+      "type": "string",
+      "default": "",
+      "title": "The cost_in_credits Schema"
+    },
+    "length": {
+      "type": "string",
+      "default": "",
+      "title": "The length Schema"
+    },
+    "max_atmosphering_speed": {
+      "type": "string",
+      "default": "",
+      "title": "The max_atmosphering_speed Schema"
+    },
+    "crew": {
+      "type": "string",
+      "default": "",
+      "title": "The crew Schema"
+    },
+    "passengers": {
+      "type": "string",
+      "default": "",
+      "title": "The passengers Schema"
+    },
+    "cargo_capacity": {
+      "type": "string",
+      "default": "",
+      "title": "The cargo_capacity Schema"
+    },
+    "consumables": {
+      "type": "string",
+      "default": "",
+      "title": "The consumables Schema"
+    },
+    "hyperdrive_rating": {
+      "type": "string",
+      "default": "",
+      "title": "The hyperdrive_rating Schema"
+    },
+    "MGLT": {
+      "type": "string",
+      "default": "",
+      "title": "The MGLT Schema"
+    },
+    "starship_class": {
+      "type": "string",
+      "default": "",
+      "title": "The starship_class Schema"
+    },
+    "pilots": {
+      "type": "array",
+      "default": [],
+      "title": "The pilots Schema",
+      "items": {}
+    },
+    "films": {
+      "type": "array",
+      "default": [],
+      "title": "The films Schema",
+      "items": {
+        "type": "string",
+        "default": "",
+        "title": "A Schema"
+      }
+    },
+    "created": {
+      "type": "string",
+      "default": "",
+      "title": "The created Schema"
+    },
+    "edited": {
+      "type": "string",
+      "default": "",
+      "title": "The edited Schema"
+    },
+    "url": {
+      "type": "string",
+      "default": "",
+      "title": "The url Schema"
+    }
+  },
+  "examples": [
+    {
+      "name": "Death Star",
+      "model": "DS-1 Orbital Battle Station",
+      "manufacturer": "Imperial Department of Military Research, Sienar Fleet Systems",
+      "cost_in_credits": "1000000000000",
+      "length": "120000",
+      "max_atmosphering_speed": "n/a",
+      "crew": "342,953",
+      "passengers": "843,342",
+      "cargo_capacity": "1000000000000",
+      "consumables": "3 years",
+      "hyperdrive_rating": "4.0",
+      "MGLT": "10",
+      "starship_class": "Deep Space Mobile Battlestation",
+      "pilots": [],
+      "films": [
+        "https://swapi.dev/api/films/1/"
+      ],
+      "created": "2014-12-10T16:36:50.509000Z",
+      "edited": "2014-12-20T21:26:24.783000Z",
+      "url": "https://swapi.dev/api/starships/9/"
+    }
+  ]
+}
